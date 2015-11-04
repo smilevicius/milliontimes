@@ -5,7 +5,7 @@
 /* line 24, sass/_clock.sass */
 .clock:before { transition: transform 0.5s ease-in-out; }
 /* line 26, sass/_clock.sass */
-.clock:after { transition: transform 0.25s ease-in-out; }
+.clock:after { height: 13px; top: 2px; transition: transform 0.25s ease-in-out; }
 
 /* line 1, sass/_digit.sass */
 .digit { display: inline-block; }

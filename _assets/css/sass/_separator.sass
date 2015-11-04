@@ -1,0 +1,30 @@
+.separator
+	display: inline-block
+	.row1, .row6
+		.clock1, .clock2
+			&:before
+				transform: rotate(225deg)
+			&:after
+				transform: rotate(45deg)
+	.row2, .row4
+		.clock1
+			&:before
+				transform: rotate(180deg)
+			&:after
+				transform: rotate(90deg)
+		.clock2
+			&:before
+				transform: rotate(180deg)
+			&:after
+				transform: rotate(270deg)
+	.row3, .row5
+		.clock1
+			&:before
+				transform: rotate(0deg)
+			&:after
+				transform: rotate(90deg)
+		.clock2
+			&:before
+				transform: rotate(270deg)
+			&:after
+				transform: rotate(0deg)

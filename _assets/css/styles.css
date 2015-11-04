@@ -1,0 +1,846 @@
+/* line 4, sass/_clock.sass */
+.clock { border: 2px solid #000; border-radius: 50%; display: inline-block; height: 30px; position: relative; width: 30px; }
+/* line 11, sass/_clock.sass */
+.clock:before, .clock:after { content: ""; border-left: 2px solid #000; bottom: 0; height: 15px; left: 0; margin: 0 auto; position: absolute; right: 0; top: 0; transform: rotate(0deg); transform-origin: 1px bottom; width: 2px; }
+/* line 24, sass/_clock.sass */
+.clock:before { transition: transform 0.5s ease-in-out; }
+/* line 26, sass/_clock.sass */
+.clock:after { transition: transform 0.25s ease-in-out; }
+
+/* line 1, sass/_digit.sass */
+.digit { display: inline-block; }
+/* line 6, sass/_digit.sass */
+.digit.digit0 .row1 .clock1:before { transform: rotate(180deg); }
+/* line 8, sass/_digit.sass */
+.digit.digit0 .row1 .clock1:after { transform: rotate(90deg); }
+/* line 11, sass/_digit.sass */
+.digit.digit0 .row1 .clock2:before, .digit.digit0 .row1 .clock3:before, .digit.digit0 .row1 .clock4:before { transform: rotate(90deg); }
+/* line 13, sass/_digit.sass */
+.digit.digit0 .row1 .clock2:after, .digit.digit0 .row1 .clock3:after, .digit.digit0 .row1 .clock4:after { transform: rotate(270deg); }
+/* line 16, sass/_digit.sass */
+.digit.digit0 .row1 .clock5:before { transform: rotate(180deg); }
+/* line 18, sass/_digit.sass */
+.digit.digit0 .row1 .clock5:after { transform: rotate(270deg); }
+/* line 22, sass/_digit.sass */
+.digit.digit0 .row2 .clock1:before, .digit.digit0 .row2 .clock5:before { transform: rotate(0deg); }
+/* line 24, sass/_digit.sass */
+.digit.digit0 .row2 .clock1:after, .digit.digit0 .row2 .clock5:after { transform: rotate(180deg); }
+/* line 27, sass/_digit.sass */
+.digit.digit0 .row2 .clock2:before { transform: rotate(180deg); }
+/* line 29, sass/_digit.sass */
+.digit.digit0 .row2 .clock2:after { transform: rotate(90deg); }
+/* line 32, sass/_digit.sass */
+.digit.digit0 .row2 .clock3:before { transform: rotate(270deg); }
+/* line 34, sass/_digit.sass */
+.digit.digit0 .row2 .clock3:after { transform: rotate(90deg); }
+/* line 37, sass/_digit.sass */
+.digit.digit0 .row2 .clock4:before { transform: rotate(270deg); }
+/* line 39, sass/_digit.sass */
+.digit.digit0 .row2 .clock4:after { transform: rotate(180deg); }
+/* line 43, sass/_digit.sass */
+.digit.digit0 .row3 .clock1:before, .digit.digit0 .row3 .clock2:before, .digit.digit0 .row3 .clock4:before, .digit.digit0 .row3 .clock5:before { transform: rotate(180deg); }
+/* line 45, sass/_digit.sass */
+.digit.digit0 .row3 .clock1:after, .digit.digit0 .row3 .clock2:after, .digit.digit0 .row3 .clock4:after, .digit.digit0 .row3 .clock5:after { transform: rotate(0deg); }
+/* line 48, sass/_digit.sass */
+.digit.digit0 .row3 .clock3:before { transform: rotate(225deg); }
+/* line 50, sass/_digit.sass */
+.digit.digit0 .row3 .clock3:after { transform: rotate(45deg); }
+/* line 54, sass/_digit.sass */
+.digit.digit0 .row4 .clock1:before, .digit.digit0 .row4 .clock2:before, .digit.digit0 .row4 .clock4:before, .digit.digit0 .row4 .clock5:before { transform: rotate(180deg); }
+/* line 56, sass/_digit.sass */
+.digit.digit0 .row4 .clock1:after, .digit.digit0 .row4 .clock2:after, .digit.digit0 .row4 .clock4:after, .digit.digit0 .row4 .clock5:after { transform: rotate(0deg); }
+/* line 59, sass/_digit.sass */
+.digit.digit0 .row4 .clock3:before { transform: rotate(225deg); }
+/* line 61, sass/_digit.sass */
+.digit.digit0 .row4 .clock3:after { transform: rotate(45deg); }
+/* line 65, sass/_digit.sass */
+.digit.digit0 .row5 .clock1:before, .digit.digit0 .row5 .clock5:before { transform: rotate(0deg); }
+/* line 67, sass/_digit.sass */
+.digit.digit0 .row5 .clock1:after, .digit.digit0 .row5 .clock5:after { transform: rotate(180deg); }
+/* line 70, sass/_digit.sass */
+.digit.digit0 .row5 .clock2:before { transform: rotate(90deg); }
+/* line 72, sass/_digit.sass */
+.digit.digit0 .row5 .clock2:after { transform: rotate(0deg); }
+/* line 75, sass/_digit.sass */
+.digit.digit0 .row5 .clock3:before { transform: rotate(270deg); }
+/* line 77, sass/_digit.sass */
+.digit.digit0 .row5 .clock3:after { transform: rotate(90deg); }
+/* line 80, sass/_digit.sass */
+.digit.digit0 .row5 .clock4:before { transform: rotate(0deg); }
+/* line 82, sass/_digit.sass */
+.digit.digit0 .row5 .clock4:after { transform: rotate(270deg); }
+/* line 86, sass/_digit.sass */
+.digit.digit0 .row6 .clock1:before { transform: rotate(90deg); }
+/* line 88, sass/_digit.sass */
+.digit.digit0 .row6 .clock1:after { transform: rotate(0deg); }
+/* line 91, sass/_digit.sass */
+.digit.digit0 .row6 .clock2:before, .digit.digit0 .row6 .clock3:before, .digit.digit0 .row6 .clock4:before { transform: rotate(90deg); }
+/* line 93, sass/_digit.sass */
+.digit.digit0 .row6 .clock2:after, .digit.digit0 .row6 .clock3:after, .digit.digit0 .row6 .clock4:after { transform: rotate(270deg); }
+/* line 96, sass/_digit.sass */
+.digit.digit0 .row6 .clock5:before { transform: rotate(0deg); }
+/* line 98, sass/_digit.sass */
+.digit.digit0 .row6 .clock5:after { transform: rotate(270deg); }
+/* line 103, sass/_digit.sass */
+.digit.digit1 .row1 .clock1:before, .digit.digit1 .row1 .clock5:before { transform: rotate(225deg); }
+/* line 105, sass/_digit.sass */
+.digit.digit1 .row1 .clock1:after, .digit.digit1 .row1 .clock5:after { transform: rotate(45deg); }
+/* line 108, sass/_digit.sass */
+.digit.digit1 .row1 .clock2:before { transform: rotate(180deg); }
+/* line 110, sass/_digit.sass */
+.digit.digit1 .row1 .clock2:after { transform: rotate(90deg); }
+/* line 113, sass/_digit.sass */
+.digit.digit1 .row1 .clock3:before { transform: rotate(90deg); }
+/* line 115, sass/_digit.sass */
+.digit.digit1 .row1 .clock3:after { transform: rotate(270deg); }
+/* line 118, sass/_digit.sass */
+.digit.digit1 .row1 .clock4:before { transform: rotate(270deg); }
+/* line 120, sass/_digit.sass */
+.digit.digit1 .row1 .clock4:after { transform: rotate(180deg); }
+/* line 124, sass/_digit.sass */
+.digit.digit1 .row2 .clock1:before, .digit.digit1 .row2 .clock5:before { transform: rotate(225deg); }
+/* line 126, sass/_digit.sass */
+.digit.digit1 .row2 .clock1:after, .digit.digit1 .row2 .clock5:after { transform: rotate(45deg); }
+/* line 129, sass/_digit.sass */
+.digit.digit1 .row2 .clock2:before { transform: rotate(90deg); }
+/* line 131, sass/_digit.sass */
+.digit.digit1 .row2 .clock2:after { transform: rotate(0deg); }
+/* line 134, sass/_digit.sass */
+.digit.digit1 .row2 .clock3:before { transform: rotate(270deg); }
+/* line 136, sass/_digit.sass */
+.digit.digit1 .row2 .clock3:after { transform: rotate(180deg); }
+/* line 139, sass/_digit.sass */
+.digit.digit1 .row2 .clock4:before { transform: rotate(0deg); }
+/* line 141, sass/_digit.sass */
+.digit.digit1 .row2 .clock4:after { transform: rotate(180deg); }
+/* line 145, sass/_digit.sass */
+.digit.digit1 .row3 .clock1:before, .digit.digit1 .row3 .clock2:before, .digit.digit1 .row3 .clock5:before { transform: rotate(225deg); }
+/* line 147, sass/_digit.sass */
+.digit.digit1 .row3 .clock1:after, .digit.digit1 .row3 .clock2:after, .digit.digit1 .row3 .clock5:after { transform: rotate(45deg); }
+/* line 150, sass/_digit.sass */
+.digit.digit1 .row3 .clock3:before { transform: rotate(180deg); }
+/* line 152, sass/_digit.sass */
+.digit.digit1 .row3 .clock3:after { transform: rotate(0deg); }
+/* line 155, sass/_digit.sass */
+.digit.digit1 .row3 .clock4:before { transform: rotate(0deg); }
+/* line 157, sass/_digit.sass */
+.digit.digit1 .row3 .clock4:after { transform: rotate(180deg); }
+/* line 161, sass/_digit.sass */
+.digit.digit1 .row4 .clock1:before, .digit.digit1 .row4 .clock2:before, .digit.digit1 .row4 .clock5:before { transform: rotate(225deg); }
+/* line 163, sass/_digit.sass */
+.digit.digit1 .row4 .clock1:after, .digit.digit1 .row4 .clock2:after, .digit.digit1 .row4 .clock5:after { transform: rotate(45deg); }
+/* line 166, sass/_digit.sass */
+.digit.digit1 .row4 .clock3:before { transform: rotate(180deg); }
+/* line 168, sass/_digit.sass */
+.digit.digit1 .row4 .clock3:after { transform: rotate(0deg); }
+/* line 171, sass/_digit.sass */
+.digit.digit1 .row4 .clock4:before { transform: rotate(0deg); }
+/* line 173, sass/_digit.sass */
+.digit.digit1 .row4 .clock4:after { transform: rotate(180deg); }
+/* line 177, sass/_digit.sass */
+.digit.digit1 .row5 .clock1:before, .digit.digit1 .row5 .clock2:before, .digit.digit1 .row5 .clock5:before { transform: rotate(225deg); }
+/* line 179, sass/_digit.sass */
+.digit.digit1 .row5 .clock1:after, .digit.digit1 .row5 .clock2:after, .digit.digit1 .row5 .clock5:after { transform: rotate(45deg); }
+/* line 182, sass/_digit.sass */
+.digit.digit1 .row5 .clock3:before { transform: rotate(180deg); }
+/* line 184, sass/_digit.sass */
+.digit.digit1 .row5 .clock3:after { transform: rotate(0deg); }
+/* line 187, sass/_digit.sass */
+.digit.digit1 .row5 .clock4:before { transform: rotate(0deg); }
+/* line 189, sass/_digit.sass */
+.digit.digit1 .row5 .clock4:after { transform: rotate(180deg); }
+/* line 193, sass/_digit.sass */
+.digit.digit1 .row6 .clock1:before, .digit.digit1 .row6 .clock2:before, .digit.digit1 .row6 .clock5:before { transform: rotate(225deg); }
+/* line 195, sass/_digit.sass */
+.digit.digit1 .row6 .clock1:after, .digit.digit1 .row6 .clock2:after, .digit.digit1 .row6 .clock5:after { transform: rotate(45deg); }
+/* line 198, sass/_digit.sass */
+.digit.digit1 .row6 .clock3:before { transform: rotate(90deg); }
+/* line 200, sass/_digit.sass */
+.digit.digit1 .row6 .clock3:after { transform: rotate(0deg); }
+/* line 203, sass/_digit.sass */
+.digit.digit1 .row6 .clock4:before { transform: rotate(270deg); }
+/* line 205, sass/_digit.sass */
+.digit.digit1 .row6 .clock4:after { transform: rotate(0deg); }
+/* line 210, sass/_digit.sass */
+.digit.digit2 .row1 .clock1:before { transform: rotate(180deg); }
+/* line 212, sass/_digit.sass */
+.digit.digit2 .row1 .clock1:after { transform: rotate(90deg); }
+/* line 215, sass/_digit.sass */
+.digit.digit2 .row1 .clock2:before, .digit.digit2 .row1 .clock3:before, .digit.digit2 .row1 .clock4:before { transform: rotate(90deg); }
+/* line 217, sass/_digit.sass */
+.digit.digit2 .row1 .clock2:after, .digit.digit2 .row1 .clock3:after, .digit.digit2 .row1 .clock4:after { transform: rotate(270deg); }
+/* line 220, sass/_digit.sass */
+.digit.digit2 .row1 .clock5:before { transform: rotate(180deg); }
+/* line 222, sass/_digit.sass */
+.digit.digit2 .row1 .clock5:after { transform: rotate(270deg); }
+/* line 226, sass/_digit.sass */
+.digit.digit2 .row2 .clock1:before { transform: rotate(90deg); }
+/* line 228, sass/_digit.sass */
+.digit.digit2 .row2 .clock1:after { transform: rotate(0deg); }
+/* line 231, sass/_digit.sass */
+.digit.digit2 .row2 .clock2:before, .digit.digit2 .row2 .clock3:before { transform: rotate(90deg); }
+/* line 233, sass/_digit.sass */
+.digit.digit2 .row2 .clock2:after, .digit.digit2 .row2 .clock3:after { transform: rotate(270deg); }
+/* line 236, sass/_digit.sass */
+.digit.digit2 .row2 .clock4:before { transform: rotate(180deg); }
+/* line 238, sass/_digit.sass */
+.digit.digit2 .row2 .clock4:after { transform: rotate(270deg); }
+/* line 241, sass/_digit.sass */
+.digit.digit2 .row2 .clock5:before { transform: rotate(180deg); }
+/* line 243, sass/_digit.sass */
+.digit.digit2 .row2 .clock5:after { transform: rotate(0deg); }
+/* line 247, sass/_digit.sass */
+.digit.digit2 .row3 .clock1:before { transform: rotate(180deg); }
+/* line 249, sass/_digit.sass */
+.digit.digit2 .row3 .clock1:after { transform: rotate(90deg); }
+/* line 252, sass/_digit.sass */
+.digit.digit2 .row3 .clock2:before, .digit.digit2 .row3 .clock3:before { transform: rotate(90deg); }
+/* line 254, sass/_digit.sass */
+.digit.digit2 .row3 .clock2:after, .digit.digit2 .row3 .clock3:after { transform: rotate(270deg); }
+/* line 257, sass/_digit.sass */
+.digit.digit2 .row3 .clock4:before { transform: rotate(270deg); }
+/* line 259, sass/_digit.sass */
+.digit.digit2 .row3 .clock4:after { transform: rotate(0deg); }
+/* line 262, sass/_digit.sass */
+.digit.digit2 .row3 .clock5:before { transform: rotate(180deg); }
+/* line 264, sass/_digit.sass */
+.digit.digit2 .row3 .clock5:after { transform: rotate(0deg); }
+/* line 268, sass/_digit.sass */
+.digit.digit2 .row4 .clock1:before { transform: rotate(180deg); }
+/* line 270, sass/_digit.sass */
+.digit.digit2 .row4 .clock1:after { transform: rotate(0deg); }
+/* line 273, sass/_digit.sass */
+.digit.digit2 .row4 .clock2:before { transform: rotate(90deg); }
+/* line 275, sass/_digit.sass */
+.digit.digit2 .row4 .clock2:after { transform: rotate(180deg); }
+/* line 278, sass/_digit.sass */
+.digit.digit2 .row4 .clock3:before, .digit.digit2 .row4 .clock4:before { transform: rotate(90deg); }
+/* line 280, sass/_digit.sass */
+.digit.digit2 .row4 .clock3:after, .digit.digit2 .row4 .clock4:after { transform: rotate(270deg); }
+/* line 283, sass/_digit.sass */
+.digit.digit2 .row4 .clock5:before { transform: rotate(270deg); }
+/* line 285, sass/_digit.sass */
+.digit.digit2 .row4 .clock5:after { transform: rotate(0deg); }
+/* line 289, sass/_digit.sass */
+.digit.digit2 .row5 .clock1:before { transform: rotate(180deg); }
+/* line 291, sass/_digit.sass */
+.digit.digit2 .row5 .clock1:after { transform: rotate(0deg); }
+/* line 294, sass/_digit.sass */
+.digit.digit2 .row5 .clock2:before { transform: rotate(0deg); }
+/* line 296, sass/_digit.sass */
+.digit.digit2 .row5 .clock2:after { transform: rotate(90deg); }
+/* line 299, sass/_digit.sass */
+.digit.digit2 .row5 .clock3:before, .digit.digit2 .row5 .clock4:before { transform: rotate(90deg); }
+/* line 301, sass/_digit.sass */
+.digit.digit2 .row5 .clock3:after, .digit.digit2 .row5 .clock4:after { transform: rotate(270deg); }
+/* line 304, sass/_digit.sass */
+.digit.digit2 .row5 .clock5:before { transform: rotate(270deg); }
+/* line 306, sass/_digit.sass */
+.digit.digit2 .row5 .clock5:after { transform: rotate(180deg); }
+/* line 310, sass/_digit.sass */
+.digit.digit2 .row6 .clock1:before { transform: rotate(90deg); }
+/* line 312, sass/_digit.sass */
+.digit.digit2 .row6 .clock1:after { transform: rotate(0deg); }
+/* line 315, sass/_digit.sass */
+.digit.digit2 .row6 .clock2:before, .digit.digit2 .row6 .clock3:before, .digit.digit2 .row6 .clock4:before { transform: rotate(90deg); }
+/* line 317, sass/_digit.sass */
+.digit.digit2 .row6 .clock2:after, .digit.digit2 .row6 .clock3:after, .digit.digit2 .row6 .clock4:after { transform: rotate(270deg); }
+/* line 320, sass/_digit.sass */
+.digit.digit2 .row6 .clock5:before { transform: rotate(0deg); }
+/* line 322, sass/_digit.sass */
+.digit.digit2 .row6 .clock5:after { transform: rotate(270deg); }
+/* line 327, sass/_digit.sass */
+.digit.digit3 .row1 .clock1:before { transform: rotate(180deg); }
+/* line 329, sass/_digit.sass */
+.digit.digit3 .row1 .clock1:after { transform: rotate(90deg); }
+/* line 332, sass/_digit.sass */
+.digit.digit3 .row1 .clock2:before, .digit.digit3 .row1 .clock3:before, .digit.digit3 .row1 .clock4:before { transform: rotate(90deg); }
+/* line 334, sass/_digit.sass */
+.digit.digit3 .row1 .clock2:after, .digit.digit3 .row1 .clock3:after, .digit.digit3 .row1 .clock4:after { transform: rotate(270deg); }
+/* line 337, sass/_digit.sass */
+.digit.digit3 .row1 .clock5:before { transform: rotate(180deg); }
+/* line 339, sass/_digit.sass */
+.digit.digit3 .row1 .clock5:after { transform: rotate(270deg); }
+/* line 343, sass/_digit.sass */
+.digit.digit3 .row2 .clock1:before { transform: rotate(90deg); }
+/* line 345, sass/_digit.sass */
+.digit.digit3 .row2 .clock1:after { transform: rotate(0deg); }
+/* line 348, sass/_digit.sass */
+.digit.digit3 .row2 .clock2:before, .digit.digit3 .row2 .clock3:before { transform: rotate(90deg); }
+/* line 350, sass/_digit.sass */
+.digit.digit3 .row2 .clock2:after, .digit.digit3 .row2 .clock3:after { transform: rotate(270deg); }
+/* line 353, sass/_digit.sass */
+.digit.digit3 .row2 .clock4:before { transform: rotate(180deg); }
+/* line 355, sass/_digit.sass */
+.digit.digit3 .row2 .clock4:after { transform: rotate(270deg); }
+/* line 358, sass/_digit.sass */
+.digit.digit3 .row2 .clock5:before { transform: rotate(180deg); }
+/* line 360, sass/_digit.sass */
+.digit.digit3 .row2 .clock5:after { transform: rotate(0deg); }
+/* line 364, sass/_digit.sass */
+.digit.digit3 .row3 .clock1:before { transform: rotate(180deg); }
+/* line 366, sass/_digit.sass */
+.digit.digit3 .row3 .clock1:after { transform: rotate(90deg); }
+/* line 369, sass/_digit.sass */
+.digit.digit3 .row3 .clock2:before, .digit.digit3 .row3 .clock3:before { transform: rotate(90deg); }
+/* line 371, sass/_digit.sass */
+.digit.digit3 .row3 .clock2:after, .digit.digit3 .row3 .clock3:after { transform: rotate(270deg); }
+/* line 374, sass/_digit.sass */
+.digit.digit3 .row3 .clock4:before { transform: rotate(270deg); }
+/* line 376, sass/_digit.sass */
+.digit.digit3 .row3 .clock4:after { transform: rotate(0deg); }
+/* line 379, sass/_digit.sass */
+.digit.digit3 .row3 .clock5:before { transform: rotate(180deg); }
+/* line 381, sass/_digit.sass */
+.digit.digit3 .row3 .clock5:after { transform: rotate(0deg); }
+/* line 385, sass/_digit.sass */
+.digit.digit3 .row4 .clock1:before { transform: rotate(0deg); }
+/* line 387, sass/_digit.sass */
+.digit.digit3 .row4 .clock1:after { transform: rotate(90deg); }
+/* line 390, sass/_digit.sass */
+.digit.digit3 .row4 .clock2:before, .digit.digit3 .row4 .clock3:before { transform: rotate(90deg); }
+/* line 392, sass/_digit.sass */
+.digit.digit3 .row4 .clock2:after, .digit.digit3 .row4 .clock3:after { transform: rotate(270deg); }
+/* line 395, sass/_digit.sass */
+.digit.digit3 .row4 .clock4:before { transform: rotate(180deg); }
+/* line 397, sass/_digit.sass */
+.digit.digit3 .row4 .clock4:after { transform: rotate(270deg); }
+/* line 400, sass/_digit.sass */
+.digit.digit3 .row4 .clock5:before { transform: rotate(180deg); }
+/* line 402, sass/_digit.sass */
+.digit.digit3 .row4 .clock5:after { transform: rotate(0deg); }
+/* line 406, sass/_digit.sass */
+.digit.digit3 .row5 .clock1:before { transform: rotate(180deg); }
+/* line 408, sass/_digit.sass */
+.digit.digit3 .row5 .clock1:after { transform: rotate(90deg); }
+/* line 411, sass/_digit.sass */
+.digit.digit3 .row5 .clock2:before, .digit.digit3 .row5 .clock3:before { transform: rotate(90deg); }
+/* line 413, sass/_digit.sass */
+.digit.digit3 .row5 .clock2:after, .digit.digit3 .row5 .clock3:after { transform: rotate(270deg); }
+/* line 416, sass/_digit.sass */
+.digit.digit3 .row5 .clock4:before { transform: rotate(270deg); }
+/* line 418, sass/_digit.sass */
+.digit.digit3 .row5 .clock4:after { transform: rotate(0deg); }
+/* line 421, sass/_digit.sass */
+.digit.digit3 .row5 .clock5:before { transform: rotate(180deg); }
+/* line 423, sass/_digit.sass */
+.digit.digit3 .row5 .clock5:after { transform: rotate(0deg); }
+/* line 427, sass/_digit.sass */
+.digit.digit3 .row6 .clock1:before { transform: rotate(90deg); }
+/* line 429, sass/_digit.sass */
+.digit.digit3 .row6 .clock1:after { transform: rotate(0deg); }
+/* line 432, sass/_digit.sass */
+.digit.digit3 .row6 .clock2:before, .digit.digit3 .row6 .clock3:before, .digit.digit3 .row6 .clock4:before { transform: rotate(90deg); }
+/* line 434, sass/_digit.sass */
+.digit.digit3 .row6 .clock2:after, .digit.digit3 .row6 .clock3:after, .digit.digit3 .row6 .clock4:after { transform: rotate(270deg); }
+/* line 437, sass/_digit.sass */
+.digit.digit3 .row6 .clock5:before { transform: rotate(0deg); }
+/* line 439, sass/_digit.sass */
+.digit.digit3 .row6 .clock5:after { transform: rotate(270deg); }
+/* line 444, sass/_digit.sass */
+.digit.digit4 .row1 .clock1:before { transform: rotate(180deg); }
+/* line 446, sass/_digit.sass */
+.digit.digit4 .row1 .clock1:after { transform: rotate(90deg); }
+/* line 449, sass/_digit.sass */
+.digit.digit4 .row1 .clock2:before { transform: rotate(270deg); }
+/* line 451, sass/_digit.sass */
+.digit.digit4 .row1 .clock2:after { transform: rotate(180deg); }
+/* line 454, sass/_digit.sass */
+.digit.digit4 .row1 .clock3:before { transform: rotate(225deg); }
+/* line 456, sass/_digit.sass */
+.digit.digit4 .row1 .clock3:after { transform: rotate(45deg); }
+/* line 459, sass/_digit.sass */
+.digit.digit4 .row1 .clock4:before { transform: rotate(180deg); }
+/* line 461, sass/_digit.sass */
+.digit.digit4 .row1 .clock4:after { transform: rotate(90deg); }
+/* line 464, sass/_digit.sass */
+.digit.digit4 .row1 .clock5:before { transform: rotate(180deg); }
+/* line 466, sass/_digit.sass */
+.digit.digit4 .row1 .clock5:after { transform: rotate(270deg); }
+/* line 470, sass/_digit.sass */
+.digit.digit4 .row2 .clock1:before, .digit.digit4 .row2 .clock2:before, .digit.digit4 .row2 .clock4:before { transform: rotate(0deg); }
+/* line 472, sass/_digit.sass */
+.digit.digit4 .row2 .clock1:after, .digit.digit4 .row2 .clock2:after, .digit.digit4 .row2 .clock4:after { transform: rotate(180deg); }
+/* line 475, sass/_digit.sass */
+.digit.digit4 .row2 .clock3:before { transform: rotate(225deg); }
+/* line 477, sass/_digit.sass */
+.digit.digit4 .row2 .clock3:after { transform: rotate(45deg); }
+/* line 480, sass/_digit.sass */
+.digit.digit4 .row2 .clock5:before { transform: rotate(180deg); }
+/* line 482, sass/_digit.sass */
+.digit.digit4 .row2 .clock5:after { transform: rotate(0deg); }
+/* line 486, sass/_digit.sass */
+.digit.digit4 .row3 .clock1:before { transform: rotate(0deg); }
+/* line 488, sass/_digit.sass */
+.digit.digit4 .row3 .clock1:after { transform: rotate(180deg); }
+/* line 491, sass/_digit.sass */
+.digit.digit4 .row3 .clock2:before { transform: rotate(0deg); }
+/* line 493, sass/_digit.sass */
+.digit.digit4 .row3 .clock2:after { transform: rotate(90deg); }
+/* line 496, sass/_digit.sass */
+.digit.digit4 .row3 .clock3:before { transform: rotate(90deg); }
+/* line 498, sass/_digit.sass */
+.digit.digit4 .row3 .clock3:after { transform: rotate(270deg); }
+/* line 501, sass/_digit.sass */
+.digit.digit4 .row3 .clock4:before { transform: rotate(270deg); }
+/* line 503, sass/_digit.sass */
+.digit.digit4 .row3 .clock4:after { transform: rotate(0deg); }
+/* line 506, sass/_digit.sass */
+.digit.digit4 .row3 .clock5:before { transform: rotate(180deg); }
+/* line 508, sass/_digit.sass */
+.digit.digit4 .row3 .clock5:after { transform: rotate(0deg); }
+/* line 512, sass/_digit.sass */
+.digit.digit4 .row4 .clock1:before { transform: rotate(90deg); }
+/* line 514, sass/_digit.sass */
+.digit.digit4 .row4 .clock1:after { transform: rotate(0deg); }
+/* line 517, sass/_digit.sass */
+.digit.digit4 .row4 .clock2:before, .digit.digit4 .row4 .clock3:before { transform: rotate(90deg); }
+/* line 519, sass/_digit.sass */
+.digit.digit4 .row4 .clock2:after, .digit.digit4 .row4 .clock3:after { transform: rotate(270deg); }
+/* line 522, sass/_digit.sass */
+.digit.digit4 .row4 .clock4:before { transform: rotate(270deg); }
+/* line 524, sass/_digit.sass */
+.digit.digit4 .row4 .clock4:after { transform: rotate(180deg); }
+/* line 527, sass/_digit.sass */
+.digit.digit4 .row4 .clock5:before { transform: rotate(180deg); }
+/* line 529, sass/_digit.sass */
+.digit.digit4 .row4 .clock5:after { transform: rotate(0deg); }
+/* line 533, sass/_digit.sass */
+.digit.digit4 .row5 .clock1:before, .digit.digit4 .row5 .clock2:before, .digit.digit4 .row5 .clock3:before { transform: rotate(225deg); }
+/* line 535, sass/_digit.sass */
+.digit.digit4 .row5 .clock1:after, .digit.digit4 .row5 .clock2:after, .digit.digit4 .row5 .clock3:after { transform: rotate(45deg); }
+/* line 538, sass/_digit.sass */
+.digit.digit4 .row5 .clock4:before, .digit.digit4 .row5 .clock5:before { transform: rotate(180deg); }
+/* line 540, sass/_digit.sass */
+.digit.digit4 .row5 .clock4:after, .digit.digit4 .row5 .clock5:after { transform: rotate(0deg); }
+/* line 544, sass/_digit.sass */
+.digit.digit4 .row6 .clock1:before, .digit.digit4 .row6 .clock2:before, .digit.digit4 .row6 .clock3:before { transform: rotate(225deg); }
+/* line 546, sass/_digit.sass */
+.digit.digit4 .row6 .clock1:after, .digit.digit4 .row6 .clock2:after, .digit.digit4 .row6 .clock3:after { transform: rotate(45deg); }
+/* line 549, sass/_digit.sass */
+.digit.digit4 .row6 .clock4:before { transform: rotate(90deg); }
+/* line 551, sass/_digit.sass */
+.digit.digit4 .row6 .clock4:after { transform: rotate(0deg); }
+/* line 554, sass/_digit.sass */
+.digit.digit4 .row6 .clock5:before { transform: rotate(270deg); }
+/* line 556, sass/_digit.sass */
+.digit.digit4 .row6 .clock5:after { transform: rotate(0deg); }
+/* line 561, sass/_digit.sass */
+.digit.digit5 .row1 .clock1:before { transform: rotate(180deg); }
+/* line 563, sass/_digit.sass */
+.digit.digit5 .row1 .clock1:after { transform: rotate(90deg); }
+/* line 566, sass/_digit.sass */
+.digit.digit5 .row1 .clock2:before, .digit.digit5 .row1 .clock3:before, .digit.digit5 .row1 .clock4:before { transform: rotate(90deg); }
+/* line 568, sass/_digit.sass */
+.digit.digit5 .row1 .clock2:after, .digit.digit5 .row1 .clock3:after, .digit.digit5 .row1 .clock4:after { transform: rotate(270deg); }
+/* line 571, sass/_digit.sass */
+.digit.digit5 .row1 .clock5:before { transform: rotate(180deg); }
+/* line 573, sass/_digit.sass */
+.digit.digit5 .row1 .clock5:after { transform: rotate(270deg); }
+/* line 577, sass/_digit.sass */
+.digit.digit5 .row2 .clock1:before { transform: rotate(0deg); }
+/* line 579, sass/_digit.sass */
+.digit.digit5 .row2 .clock1:after { transform: rotate(180deg); }
+/* line 582, sass/_digit.sass */
+.digit.digit5 .row2 .clock2:before { transform: rotate(180deg); }
+/* line 584, sass/_digit.sass */
+.digit.digit5 .row2 .clock2:after { transform: rotate(90deg); }
+/* line 587, sass/_digit.sass */
+.digit.digit5 .row2 .clock3:before, .digit.digit5 .row2 .clock4:before { transform: rotate(270deg); }
+/* line 589, sass/_digit.sass */
+.digit.digit5 .row2 .clock3:after, .digit.digit5 .row2 .clock4:after { transform: rotate(90deg); }
+/* line 592, sass/_digit.sass */
+.digit.digit5 .row2 .clock5:before { transform: rotate(270deg); }
+/* line 594, sass/_digit.sass */
+.digit.digit5 .row2 .clock5:after { transform: rotate(0deg); }
+/* line 598, sass/_digit.sass */
+.digit.digit5 .row3 .clock1:before { transform: rotate(0deg); }
+/* line 600, sass/_digit.sass */
+.digit.digit5 .row3 .clock1:after { transform: rotate(180deg); }
+/* line 603, sass/_digit.sass */
+.digit.digit5 .row3 .clock2:before { transform: rotate(90deg); }
+/* line 605, sass/_digit.sass */
+.digit.digit5 .row3 .clock2:after { transform: rotate(0deg); }
+/* line 608, sass/_digit.sass */
+.digit.digit5 .row3 .clock3:before, .digit.digit5 .row3 .clock4:before { transform: rotate(90deg); }
+/* line 610, sass/_digit.sass */
+.digit.digit5 .row3 .clock3:after, .digit.digit5 .row3 .clock4:after { transform: rotate(270deg); }
+/* line 613, sass/_digit.sass */
+.digit.digit5 .row3 .clock5:before { transform: rotate(180deg); }
+/* line 615, sass/_digit.sass */
+.digit.digit5 .row3 .clock5:after { transform: rotate(270deg); }
+/* line 619, sass/_digit.sass */
+.digit.digit5 .row4 .clock1:before { transform: rotate(0deg); }
+/* line 621, sass/_digit.sass */
+.digit.digit5 .row4 .clock1:after { transform: rotate(90deg); }
+/* line 624, sass/_digit.sass */
+.digit.digit5 .row4 .clock2:before, .digit.digit5 .row4 .clock3:before { transform: rotate(270deg); }
+/* line 626, sass/_digit.sass */
+.digit.digit5 .row4 .clock2:after, .digit.digit5 .row4 .clock3:after { transform: rotate(90deg); }
+/* line 629, sass/_digit.sass */
+.digit.digit5 .row4 .clock4:before { transform: rotate(270deg); }
+/* line 631, sass/_digit.sass */
+.digit.digit5 .row4 .clock4:after { transform: rotate(180deg); }
+/* line 634, sass/_digit.sass */
+.digit.digit5 .row4 .clock5:before { transform: rotate(0deg); }
+/* line 636, sass/_digit.sass */
+.digit.digit5 .row4 .clock5:after { transform: rotate(180deg); }
+/* line 640, sass/_digit.sass */
+.digit.digit5 .row5 .clock1:before { transform: rotate(90deg); }
+/* line 642, sass/_digit.sass */
+.digit.digit5 .row5 .clock1:after { transform: rotate(180deg); }
+/* line 645, sass/_digit.sass */
+.digit.digit5 .row5 .clock2:before, .digit.digit5 .row5 .clock3:before { transform: rotate(270deg); }
+/* line 647, sass/_digit.sass */
+.digit.digit5 .row5 .clock2:after, .digit.digit5 .row5 .clock3:after { transform: rotate(90deg); }
+/* line 650, sass/_digit.sass */
+.digit.digit5 .row5 .clock4:before { transform: rotate(270deg); }
+/* line 652, sass/_digit.sass */
+.digit.digit5 .row5 .clock4:after { transform: rotate(0deg); }
+/* line 655, sass/_digit.sass */
+.digit.digit5 .row5 .clock5:before { transform: rotate(0deg); }
+/* line 657, sass/_digit.sass */
+.digit.digit5 .row5 .clock5:after { transform: rotate(180deg); }
+/* line 661, sass/_digit.sass */
+.digit.digit5 .row6 .clock1:before { transform: rotate(0deg); }
+/* line 663, sass/_digit.sass */
+.digit.digit5 .row6 .clock1:after { transform: rotate(90deg); }
+/* line 666, sass/_digit.sass */
+.digit.digit5 .row6 .clock2:before, .digit.digit5 .row6 .clock3:before, .digit.digit5 .row6 .clock4:before { transform: rotate(270deg); }
+/* line 668, sass/_digit.sass */
+.digit.digit5 .row6 .clock2:after, .digit.digit5 .row6 .clock3:after, .digit.digit5 .row6 .clock4:after { transform: rotate(90deg); }
+/* line 671, sass/_digit.sass */
+.digit.digit5 .row6 .clock5:before { transform: rotate(270deg); }
+/* line 673, sass/_digit.sass */
+.digit.digit5 .row6 .clock5:after { transform: rotate(0deg); }
+/* line 678, sass/_digit.sass */
+.digit.digit6 .row1 .clock1:before { transform: rotate(180deg); }
+/* line 680, sass/_digit.sass */
+.digit.digit6 .row1 .clock1:after { transform: rotate(90deg); }
+/* line 683, sass/_digit.sass */
+.digit.digit6 .row1 .clock2:before, .digit.digit6 .row1 .clock3:before, .digit.digit6 .row1 .clock4:before { transform: rotate(90deg); }
+/* line 685, sass/_digit.sass */
+.digit.digit6 .row1 .clock2:after, .digit.digit6 .row1 .clock3:after, .digit.digit6 .row1 .clock4:after { transform: rotate(270deg); }
+/* line 688, sass/_digit.sass */
+.digit.digit6 .row1 .clock5:before { transform: rotate(180deg); }
+/* line 690, sass/_digit.sass */
+.digit.digit6 .row1 .clock5:after { transform: rotate(270deg); }
+/* line 694, sass/_digit.sass */
+.digit.digit6 .row2 .clock1:before { transform: rotate(0deg); }
+/* line 696, sass/_digit.sass */
+.digit.digit6 .row2 .clock1:after { transform: rotate(180deg); }
+/* line 699, sass/_digit.sass */
+.digit.digit6 .row2 .clock2:before { transform: rotate(180deg); }
+/* line 701, sass/_digit.sass */
+.digit.digit6 .row2 .clock2:after { transform: rotate(90deg); }
+/* line 704, sass/_digit.sass */
+.digit.digit6 .row2 .clock3:before, .digit.digit6 .row2 .clock4:before { transform: rotate(270deg); }
+/* line 706, sass/_digit.sass */
+.digit.digit6 .row2 .clock3:after, .digit.digit6 .row2 .clock4:after { transform: rotate(90deg); }
+/* line 709, sass/_digit.sass */
+.digit.digit6 .row2 .clock5:before { transform: rotate(270deg); }
+/* line 711, sass/_digit.sass */
+.digit.digit6 .row2 .clock5:after { transform: rotate(0deg); }
+/* line 715, sass/_digit.sass */
+.digit.digit6 .row3 .clock1:before { transform: rotate(0deg); }
+/* line 717, sass/_digit.sass */
+.digit.digit6 .row3 .clock1:after { transform: rotate(180deg); }
+/* line 720, sass/_digit.sass */
+.digit.digit6 .row3 .clock2:before { transform: rotate(90deg); }
+/* line 722, sass/_digit.sass */
+.digit.digit6 .row3 .clock2:after { transform: rotate(0deg); }
+/* line 725, sass/_digit.sass */
+.digit.digit6 .row3 .clock3:before, .digit.digit6 .row3 .clock4:before { transform: rotate(90deg); }
+/* line 727, sass/_digit.sass */
+.digit.digit6 .row3 .clock3:after, .digit.digit6 .row3 .clock4:after { transform: rotate(270deg); }
+/* line 730, sass/_digit.sass */
+.digit.digit6 .row3 .clock5:before { transform: rotate(180deg); }
+/* line 732, sass/_digit.sass */
+.digit.digit6 .row3 .clock5:after { transform: rotate(270deg); }
+/* line 736, sass/_digit.sass */
+.digit.digit6 .row4 .clock1:before, .digit.digit6 .row4 .clock5:before { transform: rotate(0deg); }
+/* line 738, sass/_digit.sass */
+.digit.digit6 .row4 .clock1:after, .digit.digit6 .row4 .clock5:after { transform: rotate(180deg); }
+/* line 741, sass/_digit.sass */
+.digit.digit6 .row4 .clock2:before { transform: rotate(180deg); }
+/* line 743, sass/_digit.sass */
+.digit.digit6 .row4 .clock2:after { transform: rotate(90deg); }
+/* line 746, sass/_digit.sass */
+.digit.digit6 .row4 .clock3:before { transform: rotate(270deg); }
+/* line 748, sass/_digit.sass */
+.digit.digit6 .row4 .clock3:after { transform: rotate(90deg); }
+/* line 751, sass/_digit.sass */
+.digit.digit6 .row4 .clock4:before { transform: rotate(270deg); }
+/* line 753, sass/_digit.sass */
+.digit.digit6 .row4 .clock4:after { transform: rotate(180deg); }
+/* line 757, sass/_digit.sass */
+.digit.digit6 .row5 .clock1:before, .digit.digit6 .row5 .clock5:before { transform: rotate(0deg); }
+/* line 759, sass/_digit.sass */
+.digit.digit6 .row5 .clock1:after, .digit.digit6 .row5 .clock5:after { transform: rotate(180deg); }
+/* line 762, sass/_digit.sass */
+.digit.digit6 .row5 .clock2:before { transform: rotate(90deg); }
+/* line 764, sass/_digit.sass */
+.digit.digit6 .row5 .clock2:after { transform: rotate(0deg); }
+/* line 767, sass/_digit.sass */
+.digit.digit6 .row5 .clock3:before { transform: rotate(270deg); }
+/* line 769, sass/_digit.sass */
+.digit.digit6 .row5 .clock3:after { transform: rotate(90deg); }
+/* line 772, sass/_digit.sass */
+.digit.digit6 .row5 .clock4:before { transform: rotate(0deg); }
+/* line 774, sass/_digit.sass */
+.digit.digit6 .row5 .clock4:after { transform: rotate(270deg); }
+/* line 778, sass/_digit.sass */
+.digit.digit6 .row6 .clock1:before { transform: rotate(90deg); }
+/* line 780, sass/_digit.sass */
+.digit.digit6 .row6 .clock1:after { transform: rotate(0deg); }
+/* line 783, sass/_digit.sass */
+.digit.digit6 .row6 .clock2:before, .digit.digit6 .row6 .clock3:before, .digit.digit6 .row6 .clock4:before { transform: rotate(90deg); }
+/* line 785, sass/_digit.sass */
+.digit.digit6 .row6 .clock2:after, .digit.digit6 .row6 .clock3:after, .digit.digit6 .row6 .clock4:after { transform: rotate(270deg); }
+/* line 788, sass/_digit.sass */
+.digit.digit6 .row6 .clock5:before { transform: rotate(0deg); }
+/* line 790, sass/_digit.sass */
+.digit.digit6 .row6 .clock5:after { transform: rotate(270deg); }
+/* line 795, sass/_digit.sass */
+.digit.digit7 .row1 .clock1:before { transform: rotate(180deg); }
+/* line 797, sass/_digit.sass */
+.digit.digit7 .row1 .clock1:after { transform: rotate(90deg); }
+/* line 800, sass/_digit.sass */
+.digit.digit7 .row1 .clock2:before, .digit.digit7 .row1 .clock3:before, .digit.digit7 .row1 .clock4:before { transform: rotate(90deg); }
+/* line 802, sass/_digit.sass */
+.digit.digit7 .row1 .clock2:after, .digit.digit7 .row1 .clock3:after, .digit.digit7 .row1 .clock4:after { transform: rotate(270deg); }
+/* line 805, sass/_digit.sass */
+.digit.digit7 .row1 .clock5:before { transform: rotate(180deg); }
+/* line 807, sass/_digit.sass */
+.digit.digit7 .row1 .clock5:after { transform: rotate(270deg); }
+/* line 811, sass/_digit.sass */
+.digit.digit7 .row2 .clock1:before { transform: rotate(180deg); }
+/* line 813, sass/_digit.sass */
+.digit.digit7 .row2 .clock1:after { transform: rotate(0deg); }
+/* line 816, sass/_digit.sass */
+.digit.digit7 .row2 .clock2:before { transform: rotate(90deg); }
+/* line 818, sass/_digit.sass */
+.digit.digit7 .row2 .clock2:after { transform: rotate(180deg); }
+/* line 821, sass/_digit.sass */
+.digit.digit7 .row2 .clock3:before { transform: rotate(90deg); }
+/* line 823, sass/_digit.sass */
+.digit.digit7 .row2 .clock3:after { transform: rotate(270deg); }
+/* line 826, sass/_digit.sass */
+.digit.digit7 .row2 .clock4:before { transform: rotate(180deg); }
+/* line 828, sass/_digit.sass */
+.digit.digit7 .row2 .clock4:after { transform: rotate(270deg); }
+/* line 831, sass/_digit.sass */
+.digit.digit7 .row2 .clock5:before { transform: rotate(180deg); }
+/* line 833, sass/_digit.sass */
+.digit.digit7 .row2 .clock5:after { transform: rotate(0deg); }
+/* line 837, sass/_digit.sass */
+.digit.digit7 .row3 .clock1:before { transform: rotate(90deg); }
+/* line 839, sass/_digit.sass */
+.digit.digit7 .row3 .clock1:after { transform: rotate(0deg); }
+/* line 842, sass/_digit.sass */
+.digit.digit7 .row3 .clock2:before { transform: rotate(0deg); }
+/* line 844, sass/_digit.sass */
+.digit.digit7 .row3 .clock2:after { transform: rotate(270deg); }
+/* line 847, sass/_digit.sass */
+.digit.digit7 .row3 .clock3:before { transform: rotate(225deg); }
+/* line 849, sass/_digit.sass */
+.digit.digit7 .row3 .clock3:after { transform: rotate(45deg); }
+/* line 852, sass/_digit.sass */
+.digit.digit7 .row3 .clock4:before, .digit.digit7 .row3 .clock5:before { transform: rotate(180deg); }
+/* line 854, sass/_digit.sass */
+.digit.digit7 .row3 .clock4:after, .digit.digit7 .row3 .clock5:after { transform: rotate(0deg); }
+/* line 858, sass/_digit.sass */
+.digit.digit7 .row4 .clock1:before, .digit.digit7 .row4 .clock2:before, .digit.digit7 .row4 .clock3:before { transform: rotate(225deg); }
+/* line 860, sass/_digit.sass */
+.digit.digit7 .row4 .clock1:after, .digit.digit7 .row4 .clock2:after, .digit.digit7 .row4 .clock3:after { transform: rotate(45deg); }
+/* line 863, sass/_digit.sass */
+.digit.digit7 .row4 .clock4:before, .digit.digit7 .row4 .clock5:before { transform: rotate(180deg); }
+/* line 865, sass/_digit.sass */
+.digit.digit7 .row4 .clock4:after, .digit.digit7 .row4 .clock5:after { transform: rotate(0deg); }
+/* line 869, sass/_digit.sass */
+.digit.digit7 .row5 .clock1:before, .digit.digit7 .row5 .clock2:before, .digit.digit7 .row5 .clock3:before { transform: rotate(225deg); }
+/* line 871, sass/_digit.sass */
+.digit.digit7 .row5 .clock1:after, .digit.digit7 .row5 .clock2:after, .digit.digit7 .row5 .clock3:after { transform: rotate(45deg); }
+/* line 874, sass/_digit.sass */
+.digit.digit7 .row5 .clock4:before, .digit.digit7 .row5 .clock5:before { transform: rotate(180deg); }
+/* line 876, sass/_digit.sass */
+.digit.digit7 .row5 .clock4:after, .digit.digit7 .row5 .clock5:after { transform: rotate(0deg); }
+/* line 880, sass/_digit.sass */
+.digit.digit7 .row6 .clock1:before, .digit.digit7 .row6 .clock2:before, .digit.digit7 .row6 .clock3:before { transform: rotate(225deg); }
+/* line 882, sass/_digit.sass */
+.digit.digit7 .row6 .clock1:after, .digit.digit7 .row6 .clock2:after, .digit.digit7 .row6 .clock3:after { transform: rotate(45deg); }
+/* line 885, sass/_digit.sass */
+.digit.digit7 .row6 .clock4:before { transform: rotate(90deg); }
+/* line 887, sass/_digit.sass */
+.digit.digit7 .row6 .clock4:after { transform: rotate(0deg); }
+/* line 890, sass/_digit.sass */
+.digit.digit7 .row6 .clock5:before { transform: rotate(270deg); }
+/* line 892, sass/_digit.sass */
+.digit.digit7 .row6 .clock5:after { transform: rotate(0deg); }
+/* line 897, sass/_digit.sass */
+.digit.digit8 .row1 .clock1:before { transform: rotate(180deg); }
+/* line 899, sass/_digit.sass */
+.digit.digit8 .row1 .clock1:after { transform: rotate(90deg); }
+/* line 902, sass/_digit.sass */
+.digit.digit8 .row1 .clock2:before, .digit.digit8 .row1 .clock3:before, .digit.digit8 .row1 .clock4:before { transform: rotate(90deg); }
+/* line 904, sass/_digit.sass */
+.digit.digit8 .row1 .clock2:after, .digit.digit8 .row1 .clock3:after, .digit.digit8 .row1 .clock4:after { transform: rotate(270deg); }
+/* line 907, sass/_digit.sass */
+.digit.digit8 .row1 .clock5:before { transform: rotate(180deg); }
+/* line 909, sass/_digit.sass */
+.digit.digit8 .row1 .clock5:after { transform: rotate(270deg); }
+/* line 913, sass/_digit.sass */
+.digit.digit8 .row2 .clock1:before, .digit.digit8 .row2 .clock5:before, .digit.digit8 .row4 .clock1:before, .digit.digit8 .row4 .clock5:before { transform: rotate(0deg); }
+/* line 915, sass/_digit.sass */
+.digit.digit8 .row2 .clock1:after, .digit.digit8 .row2 .clock5:after, .digit.digit8 .row4 .clock1:after, .digit.digit8 .row4 .clock5:after { transform: rotate(180deg); }
+/* line 918, sass/_digit.sass */
+.digit.digit8 .row2 .clock2:before, .digit.digit8 .row4 .clock2:before { transform: rotate(180deg); }
+/* line 920, sass/_digit.sass */
+.digit.digit8 .row2 .clock2:after, .digit.digit8 .row4 .clock2:after { transform: rotate(90deg); }
+/* line 923, sass/_digit.sass */
+.digit.digit8 .row2 .clock3:before, .digit.digit8 .row4 .clock3:before { transform: rotate(270deg); }
+/* line 925, sass/_digit.sass */
+.digit.digit8 .row2 .clock3:after, .digit.digit8 .row4 .clock3:after { transform: rotate(90deg); }
+/* line 928, sass/_digit.sass */
+.digit.digit8 .row2 .clock4:before, .digit.digit8 .row4 .clock4:before { transform: rotate(270deg); }
+/* line 930, sass/_digit.sass */
+.digit.digit8 .row2 .clock4:after, .digit.digit8 .row4 .clock4:after { transform: rotate(180deg); }
+/* line 934, sass/_digit.sass */
+.digit.digit8 .row3 .clock1:before, .digit.digit8 .row3 .clock5:before, .digit.digit8 .row5 .clock1:before, .digit.digit8 .row5 .clock5:before { transform: rotate(0deg); }
+/* line 936, sass/_digit.sass */
+.digit.digit8 .row3 .clock1:after, .digit.digit8 .row3 .clock5:after, .digit.digit8 .row5 .clock1:after, .digit.digit8 .row5 .clock5:after { transform: rotate(180deg); }
+/* line 939, sass/_digit.sass */
+.digit.digit8 .row3 .clock2:before, .digit.digit8 .row5 .clock2:before { transform: rotate(90deg); }
+/* line 941, sass/_digit.sass */
+.digit.digit8 .row3 .clock2:after, .digit.digit8 .row5 .clock2:after { transform: rotate(0deg); }
+/* line 944, sass/_digit.sass */
+.digit.digit8 .row3 .clock3:before, .digit.digit8 .row5 .clock3:before { transform: rotate(270deg); }
+/* line 946, sass/_digit.sass */
+.digit.digit8 .row3 .clock3:after, .digit.digit8 .row5 .clock3:after { transform: rotate(90deg); }
+/* line 949, sass/_digit.sass */
+.digit.digit8 .row3 .clock4:before, .digit.digit8 .row5 .clock4:before { transform: rotate(0deg); }
+/* line 951, sass/_digit.sass */
+.digit.digit8 .row3 .clock4:after, .digit.digit8 .row5 .clock4:after { transform: rotate(270deg); }
+/* line 955, sass/_digit.sass */
+.digit.digit8 .row6 .clock1:before { transform: rotate(0deg); }
+/* line 957, sass/_digit.sass */
+.digit.digit8 .row6 .clock1:after { transform: rotate(90deg); }
+/* line 960, sass/_digit.sass */
+.digit.digit8 .row6 .clock2:before, .digit.digit8 .row6 .clock3:before, .digit.digit8 .row6 .clock4:before { transform: rotate(90deg); }
+/* line 962, sass/_digit.sass */
+.digit.digit8 .row6 .clock2:after, .digit.digit8 .row6 .clock3:after, .digit.digit8 .row6 .clock4:after { transform: rotate(270deg); }
+/* line 965, sass/_digit.sass */
+.digit.digit8 .row6 .clock5:before { transform: rotate(270deg); }
+/* line 967, sass/_digit.sass */
+.digit.digit8 .row6 .clock5:after { transform: rotate(0deg); }
+/* line 972, sass/_digit.sass */
+.digit.digit9 .row1 .clock1:before { transform: rotate(180deg); }
+/* line 974, sass/_digit.sass */
+.digit.digit9 .row1 .clock1:after { transform: rotate(90deg); }
+/* line 977, sass/_digit.sass */
+.digit.digit9 .row1 .clock2:before, .digit.digit9 .row1 .clock3:before, .digit.digit9 .row1 .clock4:before { transform: rotate(90deg); }
+/* line 979, sass/_digit.sass */
+.digit.digit9 .row1 .clock2:after, .digit.digit9 .row1 .clock3:after, .digit.digit9 .row1 .clock4:after { transform: rotate(270deg); }
+/* line 982, sass/_digit.sass */
+.digit.digit9 .row1 .clock5:before { transform: rotate(180deg); }
+/* line 984, sass/_digit.sass */
+.digit.digit9 .row1 .clock5:after { transform: rotate(270deg); }
+/* line 988, sass/_digit.sass */
+.digit.digit9 .row2 .clock1:before, .digit.digit9 .row2 .clock5:before { transform: rotate(0deg); }
+/* line 990, sass/_digit.sass */
+.digit.digit9 .row2 .clock1:after, .digit.digit9 .row2 .clock5:after { transform: rotate(180deg); }
+/* line 993, sass/_digit.sass */
+.digit.digit9 .row2 .clock2:before { transform: rotate(180deg); }
+/* line 995, sass/_digit.sass */
+.digit.digit9 .row2 .clock2:after { transform: rotate(90deg); }
+/* line 998, sass/_digit.sass */
+.digit.digit9 .row2 .clock3:before { transform: rotate(270deg); }
+/* line 1000, sass/_digit.sass */
+.digit.digit9 .row2 .clock3:after { transform: rotate(90deg); }
+/* line 1003, sass/_digit.sass */
+.digit.digit9 .row2 .clock4:before { transform: rotate(270deg); }
+/* line 1005, sass/_digit.sass */
+.digit.digit9 .row2 .clock4:after { transform: rotate(180deg); }
+/* line 1009, sass/_digit.sass */
+.digit.digit9 .row3 .clock1:before, .digit.digit9 .row3 .clock5:before { transform: rotate(0deg); }
+/* line 1011, sass/_digit.sass */
+.digit.digit9 .row3 .clock1:after, .digit.digit9 .row3 .clock5:after { transform: rotate(180deg); }
+/* line 1014, sass/_digit.sass */
+.digit.digit9 .row3 .clock2:before { transform: rotate(90deg); }
+/* line 1016, sass/_digit.sass */
+.digit.digit9 .row3 .clock2:after { transform: rotate(0deg); }
+/* line 1019, sass/_digit.sass */
+.digit.digit9 .row3 .clock3:before { transform: rotate(270deg); }
+/* line 1021, sass/_digit.sass */
+.digit.digit9 .row3 .clock3:after { transform: rotate(90deg); }
+/* line 1024, sass/_digit.sass */
+.digit.digit9 .row3 .clock4:before { transform: rotate(0deg); }
+/* line 1026, sass/_digit.sass */
+.digit.digit9 .row3 .clock4:after { transform: rotate(270deg); }
+/* line 1030, sass/_digit.sass */
+.digit.digit9 .row4 .clock1:before { transform: rotate(0deg); }
+/* line 1032, sass/_digit.sass */
+.digit.digit9 .row4 .clock1:after { transform: rotate(90deg); }
+/* line 1035, sass/_digit.sass */
+.digit.digit9 .row4 .clock2:before, .digit.digit9 .row4 .clock3:before { transform: rotate(270deg); }
+/* line 1037, sass/_digit.sass */
+.digit.digit9 .row4 .clock2:after, .digit.digit9 .row4 .clock3:after { transform: rotate(90deg); }
+/* line 1040, sass/_digit.sass */
+.digit.digit9 .row4 .clock4:before { transform: rotate(270deg); }
+/* line 1042, sass/_digit.sass */
+.digit.digit9 .row4 .clock4:after { transform: rotate(180deg); }
+/* line 1045, sass/_digit.sass */
+.digit.digit9 .row4 .clock5:before { transform: rotate(0deg); }
+/* line 1047, sass/_digit.sass */
+.digit.digit9 .row4 .clock5:after { transform: rotate(180deg); }
+/* line 1051, sass/_digit.sass */
+.digit.digit9 .row5 .clock1:before { transform: rotate(180deg); }
+/* line 1053, sass/_digit.sass */
+.digit.digit9 .row5 .clock1:after { transform: rotate(90deg); }
+/* line 1056, sass/_digit.sass */
+.digit.digit9 .row5 .clock2:before, .digit.digit9 .row5 .clock3:before { transform: rotate(90deg); }
+/* line 1058, sass/_digit.sass */
+.digit.digit9 .row5 .clock2:after, .digit.digit9 .row5 .clock3:after { transform: rotate(270deg); }
+/* line 1061, sass/_digit.sass */
+.digit.digit9 .row5 .clock4:before { transform: rotate(270deg); }
+/* line 1063, sass/_digit.sass */
+.digit.digit9 .row5 .clock4:after { transform: rotate(0deg); }
+/* line 1066, sass/_digit.sass */
+.digit.digit9 .row5 .clock5:before { transform: rotate(180deg); }
+/* line 1068, sass/_digit.sass */
+.digit.digit9 .row5 .clock5:after { transform: rotate(0deg); }
+/* line 1072, sass/_digit.sass */
+.digit.digit9 .row6 .clock1:before { transform: rotate(90deg); }
+/* line 1074, sass/_digit.sass */
+.digit.digit9 .row6 .clock1:after { transform: rotate(0deg); }
+/* line 1077, sass/_digit.sass */
+.digit.digit9 .row6 .clock2:before, .digit.digit9 .row6 .clock3:before, .digit.digit9 .row6 .clock4:before { transform: rotate(90deg); }
+/* line 1079, sass/_digit.sass */
+.digit.digit9 .row6 .clock2:after, .digit.digit9 .row6 .clock3:after, .digit.digit9 .row6 .clock4:after { transform: rotate(270deg); }
+/* line 1082, sass/_digit.sass */
+.digit.digit9 .row6 .clock5:before { transform: rotate(0deg); }
+/* line 1084, sass/_digit.sass */
+.digit.digit9 .row6 .clock5:after { transform: rotate(270deg); }
+
+/* line 1, sass/_separator.sass */
+.separator { display: inline-block; }
+/* line 5, sass/_separator.sass */
+.separator .row1 .clock1:before, .separator .row1 .clock2:before, .separator .row6 .clock1:before, .separator .row6 .clock2:before { transform: rotate(225deg); }
+/* line 7, sass/_separator.sass */
+.separator .row1 .clock1:after, .separator .row1 .clock2:after, .separator .row6 .clock1:after, .separator .row6 .clock2:after { transform: rotate(45deg); }
+/* line 11, sass/_separator.sass */
+.separator .row2 .clock1:before, .separator .row4 .clock1:before { transform: rotate(180deg); }
+/* line 13, sass/_separator.sass */
+.separator .row2 .clock1:after, .separator .row4 .clock1:after { transform: rotate(90deg); }
+/* line 16, sass/_separator.sass */
+.separator .row2 .clock2:before, .separator .row4 .clock2:before { transform: rotate(180deg); }
+/* line 18, sass/_separator.sass */
+.separator .row2 .clock2:after, .separator .row4 .clock2:after { transform: rotate(270deg); }
+/* line 22, sass/_separator.sass */
+.separator .row3 .clock1:before, .separator .row5 .clock1:before { transform: rotate(0deg); }
+/* line 24, sass/_separator.sass */
+.separator .row3 .clock1:after, .separator .row5 .clock1:after { transform: rotate(90deg); }
+/* line 27, sass/_separator.sass */
+.separator .row3 .clock2:before, .separator .row5 .clock2:before { transform: rotate(270deg); }
+/* line 29, sass/_separator.sass */
+.separator .row3 .clock2:after, .separator .row5 .clock2:after { transform: rotate(0deg); }

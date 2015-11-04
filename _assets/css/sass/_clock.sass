@@ -1,0 +1,28 @@
+$clockSize: 30px
+$handSize: ($clockSize / 2)
+$width: 2px
+.clock
+	border: $width solid #000
+	border-radius: 50%
+	display: inline-block
+	height: $clockSize
+	position: relative
+	width: $clockSize
+	&:before, &:after
+		content: ""
+		border-left: $width solid #000
+		bottom: 0
+		height: $handSize
+		left: 0
+		margin: 0 auto
+		position: absolute
+		right: 0
+		top: 0
+		transform: rotate(0deg)
+		transform-origin: 1px bottom
+		width: $width
+	&:before
+		transition: transform .5s ease-in-out
+	&:after
+		transition: transform .25s ease-in-out
+

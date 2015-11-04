@@ -1,5 +1,5 @@
 /* line 4, sass/_clock.sass */
-.clock { border: 2px solid #000; border-radius: 50%; display: inline-block; height: 30px; position: relative; width: 30px; }
+.clock { border: 2px solid #eee; border-radius: 50%; display: inline-block; height: 30px; position: relative; width: 30px; }
 /* line 11, sass/_clock.sass */
 .clock:before, .clock:after { content: ""; border-left: 2px solid #000; bottom: 0; height: 15px; left: 0; margin: 0 auto; position: absolute; right: 0; top: 0; transform: rotate(0deg); transform-origin: 1px bottom; width: 2px; }
 /* line 24, sass/_clock.sass */

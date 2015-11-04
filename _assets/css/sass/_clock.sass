@@ -2,7 +2,7 @@ $clockSize: 30px
 $handSize: ($clockSize / 2)
 $width: 2px
 .clock
-	border: $width solid #000
+	border: $width solid #eee
 	border-radius: 50%
 	display: inline-block
 	height: $clockSize
@@ -19,11 +19,11 @@ $width: 2px
 		right: 0
 		top: 0
 		transform: rotate(0deg)
-		transform-origin: 1px bottom
+		transform-origin: ($width / 2) bottom
 		width: $width
 	&:before
 		transition: transform .5s ease-in-out
 	&:after
-		height: ($handSize - 2)
-		top: 2px
+		height: ($handSize - $width)
+		top: $width
 		transition: transform .25s ease-in-out

@@ -1,11 +1,14 @@
+/* line 1, sass/styles.sass */
+.container { white-space: nowrap; }
+
 /* line 4, sass/_clock.sass */
 .clock { border: 2px solid #eee; border-radius: 50%; display: inline-block; height: 30px; position: relative; width: 30px; }
 /* line 11, sass/_clock.sass */
 .clock:before, .clock:after { content: ""; border-left: 2px solid #000; bottom: 0; height: 15px; left: 0; margin: 0 auto; position: absolute; right: 0; top: 0; transform: rotate(0deg); transform-origin: 1px bottom; width: 2px; }
 /* line 24, sass/_clock.sass */
-.clock:before { transition: transform 0.5s ease-in-out; }
+.clock:before { transition: transform 1s ease-in-out; }
 /* line 26, sass/_clock.sass */
-.clock:after { height: 13px; top: 2px; transition: transform 0.25s ease-in-out; }
+.clock:after { height: 13px; top: 2px; transition: transform 0.5s ease-in-out; }
 
 /* line 1, sass/_digit.sass */
 .digit { display: inline-block; }
